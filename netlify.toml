@@ -1,4 +1,7 @@
 [build]
   # Static site with no build step yet — serve files from the repo root.
-  command = ""
+  # An explicit no-op command is required: an empty string falls back to the
+  # build command configured in the Netlify UI (npm run build), which fails
+  # because there is no package.json.
+  command = "echo 'Static site: no build step'"
   publish = "."
