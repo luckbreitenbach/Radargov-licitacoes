@@ -1,0 +1,4 @@
+[build]
+  # Static site with no build step yet — serve files from the repo root.
+  command = ""
+  publish = "."
